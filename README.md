@@ -34,7 +34,20 @@
 
 ![image](https://github.com/user-attachments/assets/96ffe7a1-8bb7-40e0-90e2-b3fcd1f7e258)
 
+Для ключа используется функция file
 
+```
+locals {
+  ssh-keys = file("~/.ssh/ubuntu.pub")
+}
+
+....
+
+ metadata = {
+    ssh-keys = "ubuntu:${local.ssh-keys}"
+    
+  }
+```
 
 # Задание 3
 

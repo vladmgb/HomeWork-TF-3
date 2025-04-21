@@ -12,7 +12,30 @@
 
 
 
+# Задание 2
+
+2.1 
+Созданы две ВМ с помощью count, назначена группа безопасности example_dynamic.
+
+![image](https://github.com/user-attachments/assets/5a64a190-cb07-4da4-8bc2-113659d34115)
+
+
+![image](https://github.com/user-attachments/assets/ab093652-1f6a-4ef2-9f6c-abd23a7beb5c
+
+
+![image](https://github.com/user-attachments/assets/e2f51c49-55c1-495a-8673-5eea3987464e)
+
+2.2
+Описаны и созданы с помощью for_each loop еще две ВМ.
+Порядок загрузки задан через depends_on.
+
+![image](https://github.com/user-attachments/assets/3da9d6f6-7dc2-470f-b2b1-603b3cd1bb3c)
+
+
+![image](https://github.com/user-attachments/assets/96ffe7a1-8bb7-40e0-90e2-b3fcd1f7e258)
+
+
+
 # Задание 3
 
-
-№ Задание 4
+# Задание 4

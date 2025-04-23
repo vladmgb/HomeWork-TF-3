@@ -68,3 +68,23 @@ locals {
 
 
 # Задание 4
+
+Создал файл ansible.tf по примеру.
+
+![image](https://github.com/user-attachments/assets/a00c8fbe-3af0-45fd-a8d4-aefb13a1e1a0)
+
+Создал шаблон hosts.tftpl по примеру.
+
+![image](https://github.com/user-attachments/assets/00111a40-c6cd-4ab1-b565-8fbad7d25cfa)
+
+Добавил переменую fqdn.
+
+```
+${i["name"]} ansible_host=${i["network_interface"][0]["nat_ip_address"]==null ? i["network_interface"][0]["ip_address"] : i["network_interface"][0]["nat_ip_address"]} fqdn=${i["hostname"] != "" ? "${i["hostname"]}.ru-central1.internal" : replace(i["fqdn"], "auto.internal", "ru-central1.internal")}
+```
+Результат:
+
+![image](https://github.com/user-attachments/assets/53f31a16-9a9d-49dd-bd9d-1f53ac079746)
+
+
+

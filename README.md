@@ -51,4 +51,20 @@ locals {
 
 # Задание 3
 
+1. Диски созданы
+
+![image](https://github.com/user-attachments/assets/d1d2b291-b54e-4bfc-8b0e-b0ebc3cad6b3)
+
+![image](https://github.com/user-attachments/assets/5865296a-5253-483e-ba69-8fec224fd78a)
+
+2. Создана одна ВМ  storage и к ней подключены три диска.
+
+   ![image](https://github.com/user-attachments/assets/d9c4151b-c773-4f4c-80cd-0d7dc5e0ffeb)
+
+
+   ![image](https://github.com/user-attachments/assets/f0d71342-0e58-4496-b6c6-8daebadd2cd9)
+
+
+
+
 # Задание 4

@@ -2,7 +2,11 @@
 
 # Задание 1
 
+Выполнил код.
+
 ![1](https://github.com/user-attachments/assets/2868e8bd-46de-4b98-8deb-518d63de9370)
+
+«Группы безопасности» в ЛК Yandex Cloud
 
 ![2](https://github.com/user-attachments/assets/4c69b952-3926-479c-92d1-6b2b5a0a08d1)
 
@@ -20,7 +24,7 @@
 ![image](https://github.com/user-attachments/assets/5a64a190-cb07-4da4-8bc2-113659d34115)
 
 
-![image](https://github.com/user-attachments/assets/ab093652-1f6a-4ef2-9f6c-abd23a7beb5c
+![image](https://github.com/user-attachments/assets/ab093652-1f6a-4ef2-9f6c-abd23a7beb5c)
 
 
 ![image](https://github.com/user-attachments/assets/e2f51c49-55c1-495a-8673-5eea3987464e)
@@ -86,5 +90,35 @@ ${i["name"]} ansible_host=${i["network_interface"][0]["nat_ip_address"]==null ? 
 
 ![image](https://github.com/user-attachments/assets/53f31a16-9a9d-49dd-bd9d-1f53ac079746)
 
+
+# Задание 5*
+
+Код:
+
+```hcl
+output "my_vm" {
+  value = flatten([
+    [for i in yandex_compute_instance.web : {
+      name = i.name
+      id   = i.id
+      fqdn = i.fqdn
+    }],
+    [for i in [yandex_compute_instance.storage-vm] : {
+      name = i.name
+      id   = i.id
+      fqdn = i.fqdn
+    }],
+    [for i in yandex_compute_instance.db : {
+      name = i.name
+      id   = i.id
+      fqdn = i.fqdn
+    }]
+  ])
+}
+```
+
+Результат:
+
+![image](https://github.com/user-attachments/assets/ff5a032b-8678-4cd3-85aa-578522c2fe0a)
 
 
